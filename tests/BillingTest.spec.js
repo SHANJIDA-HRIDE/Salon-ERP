@@ -15,19 +15,18 @@ test.describe('Billing All Tests', () => {
     
     const billingData = config.BillingData();
     
-    await billingPage.addNewBill(
+    await billingPage.createBillWithService(
       billingData.customerName,
       billingData.customerPhone,
-      billingData.billReferenceSelectWalkin,
       billingData.billPaymentMethodSelectCard,
-
-      //billingData.discountTypeSelectPercentage,
-      //billingData.discountValuePercentage,
-      billingData.staffName,
-      //billingData.quantity,
-      //billingData.unitPrice
+      billingData.serviceNameSearch,
+      //billingData.staffName,
     );
   });
 
 }
 );
+
+
+
+

@@ -75,6 +75,7 @@ const config = {
     billPaymentMethodSelectCash: 'Cash',
     billPaymentMethodSelectCard: 'AH-0042 - Card Payment',
     billPaymentMethodSelectBkash: 'bkash',
+    serviceNameSearch: 'Manicure Regular',
 
     discountTypeSelectPercentage: 'Percentage',
     discountValuePercentage: (Math.floor(Math.random() * 20) + 1).toString(), // 1–20%
@@ -82,7 +83,7 @@ const config = {
     discountTypeSelectFixedAmount: 'Fixed Amount',
     discountValueFixedAmount: (Math.floor(Math.random() * 100) + 1).toString(), // 1–100
     notes: 'This is a sample bill note.',
-    staffName: 'Hafiz',
+    staffName: 'Dimond  Sangma',
     quantity: (Math.floor(Math.random() * 5) + 1).toString(), // 1–5
     unitPrice: (Math.floor(Math.random() * 1000) + 100).toString(), // 100–1100
   }),
