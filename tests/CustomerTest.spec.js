@@ -11,7 +11,7 @@ test.describe('Customer All Tests', () => {
 
   });
 
- /* test('Add New Customer with Valid Data', async () => {
+  /*test('Add New Customer with Valid Data', async () => {
     const member = config.CustomerData(); 
     await customerPage.openCustomerPage();
     await customerPage.addCustomer(

@@ -34,8 +34,8 @@ function generateRandomCommissionRate() {
 
 const config = {
   loginData: {
-    validUsername: 'useradmin',
-    validPassword: 'useradmin',
+    validUsername: 'admin',
+    validPassword: '12345678',
   },
 
   StaffData: () => ({
@@ -73,7 +73,7 @@ const config = {
     billReferenceSelectEvent: 'Event',
 
     billPaymentMethodSelectCash: 'Cash',
-    billPaymentMethodSelectCard: 'Card',
+    billPaymentMethodSelectCard: 'AH-0042 - Card Payment',
     billPaymentMethodSelectBkash: 'bkash',
 
     discountTypeSelectPercentage: 'Percentage',

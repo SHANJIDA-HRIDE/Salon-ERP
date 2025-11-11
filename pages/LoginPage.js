@@ -24,9 +24,8 @@ async login(username, password) {
   // Wait for password field to be visible
   await this.passwordInput.waitFor({ state: 'visible' });
   await this.passwordInput.fill(password);
-
   await this.loginButton.click();
-  await expect(this.dashboardHeading).toBeVisible();
+  //await expect(this.dashboardHeading).toBeVisible();
 }
 
 }

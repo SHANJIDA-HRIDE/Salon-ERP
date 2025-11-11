@@ -19,9 +19,10 @@ test.describe('Billing All Tests', () => {
       billingData.customerName,
       billingData.customerPhone,
       billingData.billReferenceSelectWalkin,
-      billingData.billPaymentMethodSelectBkash,
-      billingData.discountTypeSelectPercentage,
-      billingData.discountValuePercentage,
+      billingData.billPaymentMethodSelectCard,
+
+      //billingData.discountTypeSelectPercentage,
+      //billingData.discountValuePercentage,
       billingData.staffName,
       //billingData.quantity,
       //billingData.unitPrice

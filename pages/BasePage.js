@@ -1,7 +1,7 @@
 class BasePage {
   constructor(page) {
     this.page = page;
-    this.baseURL = 'https://style-ops-test.evexia-global.com'; // Replace with your actual base URL
+    this.baseURL = 'https://so-dev.evexia-global.com'; 
   }
 
   async goto(path = '') {

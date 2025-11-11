@@ -6,14 +6,14 @@ class BillingPage extends BasePage { // 👈 EXTEND BasePage
         super(page); // 👈 CALL super() to pass page to BasePage
         this.page = page;
         this.newBillButton = page.locator('button:has-text("New Bill")');
-        this.phoneInput = page.locator('form#newBillForm').getByLabel('Phone (Optional)');
-        this.customerNameInput = page.locator('form#newBillForm').getByLabel('Customer Name (Optional)');
-        this.billReferenceSelect = page.locator('#billReference');
-        this.billPaymentMethodSelect = page.locator('form#newBillForm').getByLabel('Payment Method');
+        this.phoneInput = page.locator('#phone');
+        this.customerNameInput = page.locator('#customer_name');
+        this.referenceDropdown = page.locator('#reference');
+        this.billPaymentMethod = page.locator('#billPaymentMethod');
         this.newDiscountTypeSelect = page.locator('form#newBillForm').getByLabel('Discount Type');
         this.newDiscountValueInput = page.locator('#newDiscountValue');    
         this.billNotesInput = page.getByRole('textbox', { name: '' }).getByPlaceholder('Add any additional notes...');
-        this.addServiceButton = page.getByRole('button', { name: '+ Add Service' });
+        this.addServiceButton = page.getByRole('button', { name: 'Add Service' });
         this.Service1 = page.locator('xpath=//body/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]');
         this.Service2 = page.locator('xpath=//body/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]');
         
@@ -47,10 +47,10 @@ class BillingPage extends BasePage { // 👈 EXTEND BasePage
         await this.newBillButton.click();
         await this.phoneInput.fill(phone);
         await this.customerNameInput.fill(customerName);
-        await this.billReferenceSelect.selectOption(billReference);
-        await this.billPaymentMethodSelect.selectOption(paymentMethod);
+        await this.referenceDropdown.selectOption(billReference);
+        await this.billPaymentMethod.selectOption(paymentMethod);
         //await this.newDiscountTypeSelect.selectOption(discountType);
-        await this.newDiscountValueInput.fill(discountValue); 
+        //await this.newDiscountValueInput.fill(discountValue); 
         //await this.billNotesInput.fill(notes);
         await this.addServiceButton.click();
 
