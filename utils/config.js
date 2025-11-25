@@ -72,10 +72,14 @@ const config = {
     billReferenceSelectWalkin: 'Walk in',
     billReferenceSelectEvent: 'Event',
 
-    billPaymentMethodSelectCash: 'Cash',
+    billPaymentMethodSelectCash: 'AH-0034 - Cash',
     billPaymentMethodSelectCard: 'AH-0042 - Card Payment',
     billPaymentMethodSelectBkash: 'bkash',
     serviceNameSearch: 'Manicure Regular',
+    serviceName2: 'Pedicure Regular',
+
+    staffValue: '14', 
+    staffValue2: '15', 
 
     discountTypeSelectPercentage: 'Percentage',
     discountValuePercentage: (Math.floor(Math.random() * 20) + 1).toString(), // 1–20%

@@ -1,5 +1,5 @@
 // login.setup.js
-const { chromium } = require('@playwright/test');
+/*const { chromium } = require('@playwright/test');
 const { LoginPage } = require('./pages/LoginPage');
 
 
@@ -17,3 +17,4 @@ const { LoginPage } = require('./pages/LoginPage');
 
   await browser.close();
 })();
+*/
